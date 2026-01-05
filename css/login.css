@@ -1,0 +1,115 @@
+/* --- Login Page Styles --- */
+.auth-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  padding: 20px;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+.auth-container {
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 24px;
+  box-shadow: 0 20px 40px rgba(29, 53, 87, 0.1);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  animation: fadeIn 0.6s ease-out;
+}
+
+.auth-container h2 {
+  color: #1d3557; /* secondary-color */
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 30px;
+  letter-spacing: -1px;
+}
+
+/* --- Form Styling --- */
+.auth-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.auth-container input {
+  width: 100%;
+  padding: 14px 20px;
+  border: 2px solid #f1f3f5;
+  border-radius: 12px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  outline: none;
+  background-color: #f8f9fa;
+}
+
+.auth-container input:focus {
+  border-color: #e63946; /* primary-color */
+  background-color: #ffffff;
+  box-shadow: 0 0 0 4px rgba(230, 57, 70, 0.1);
+}
+
+/* --- Button Styling --- */
+.auth-container button[type="submit"] {
+  background-color: #e63946; /* primary-color */
+  color: white;
+  border: none;
+  padding: 14px;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 10px;
+}
+
+.auth-container button[type="submit"]:hover {
+  background-color: #c1121f; /* primary-hover */
+  transform: translateY(-2px);
+  box-shadow: 0 8px 15px rgba(230, 57, 70, 0.3);
+}
+
+/* --- Secondary Button (Register) --- */
+.auth-container button:not([type="submit"]) {
+  background: transparent;
+  color: #457b9d; /* accent-color */
+  border: none;
+  margin-top: 20px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: underline;
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+}
+
+.auth-container button:not([type="submit"]):hover {
+  opacity: 1;
+  color: #1d3557;
+}
+
+/* --- Animations --- */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* --- Responsive Layout --- */
+@media (max-width: 480px) {
+  .auth-container {
+    padding: 30px 20px;
+  }
+  
+  .auth-container h2 {
+    font-size: 1.75rem;
+  }
+}

@@ -1,0 +1,11 @@
+- [x] Add stock display to product cards in Product.jsx.
+- [ ] Create ProductDetail.jsx component for individual product pages.
+- [ ] Add route for /products/:id in App.jsx.
+- [ ] Add GET route for all orders in backend/routes/orderRoutes.js.
+- [ ] Add getAllOrders function in backend/controllers/orderController.js.
+- [ ] Add GET route for all products in backend/routes/productRoutes.js.
+- [ ] Add getAllProducts function in backend/controllers/productController.js.
+- [ ] Update AdminPanel.jsx to fetch real data from backend for products, orders, users.
+- [ ] Add payment method field to order model and controller.
+- [ ] Add payment options selection in Product.jsx buy process.
+- [ ] Add edit functionality in AdminPanel for products and orders.
